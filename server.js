@@ -18,7 +18,7 @@ var articles={
               This is the content for my first file.This is the content for my first file.This is the content for my first file.This is the content for my first file.This is the content for my first file.This is the content for my first file.This is the content for my first file.This is the content for my first file.
         </p>`
         },
-   ' article-two' : { title: 'Article-two|Garima Gill',
+    'article-two' : { title: 'Article-two|Garima Gill',
     heading:'Article Two',
     date:'Aug 16,2017',
     content:` <p>
@@ -79,8 +79,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/articleName',function(req,res){
-    // articleName -- article-one
-    // articles[articleName] --{}content object for article one
+    // articleName==article-one
+    // articles[articleName]=={}content object for article one
     var articleName =req.params.articleName;
     res.send(createTemplate(articles[articleName]));
 });
