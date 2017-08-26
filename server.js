@@ -92,6 +92,7 @@ app.get('/submit-name',function(req,res){// /submit-name?name=xxxx
     //JSON:javascript object notation
     res.send(JSON.stringify(names));
 });
+
 app.get('/:articleName',function(req,res){
     // articleName==article-one
     // articles[articleName]=={}content object for article one
